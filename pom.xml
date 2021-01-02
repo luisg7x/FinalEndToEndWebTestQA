@@ -64,6 +64,11 @@
 	    <scope>test</scope>
 	</dependency>
 			
+	<dependency><!--  extend report -class course 173 -->
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>5.0.5</version>
+	</dependency>
 
   </dependencies>
 
