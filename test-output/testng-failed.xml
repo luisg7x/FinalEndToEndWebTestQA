@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="10" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="10" parallel="tests" name="VerifyCheckoutButtonDisabledWhenCarEmpty(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="finaltc.VerifyCheckoutButtonDisabledWhenCarEmpty">
+      <class name="finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts">
         <methods>
           <include name="getConnection"/>
-          <include name="verifyCheckoutButtonDisabledWhenCarEmpty"/>
+          <include name="verifyIfSearchFunctionalityWorksNonExistingProducts" invocation-numbers="0 1 2 3 4"/>
           <include name="close"/>
         </methods>
-      </class> <!-- finaltc.VerifyCheckoutButtonDisabledWhenCarEmpty -->
+      </class> <!-- finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts -->
     </classes>
-  </test> <!-- VerifyCheckoutButtonDisabledWhenCarEmpty(failed) -->
-  <test thread-count="10" parallel="tests" name="VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed(failed)">
-    <classes>
-      <class name="finaltc.VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed">
-        <methods>
-          <include name="close"/>
-          <include name="getConnection"/>
-          <include name="AddingProductToCart"/>
-        </methods>
-      </class> <!-- finaltc.VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed -->
-    </classes>
-  </test> <!-- VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

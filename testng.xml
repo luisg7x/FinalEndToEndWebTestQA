@@ -55,4 +55,22 @@
     </classes>
   </test> <!-- Test -->
   
+  <test thread-count="5" name="VerifyAllLinksWorks">
+    <classes>
+    <class name="finaltc.VerifyAllLinksWorks"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="VerifyIfSearchFunctionalityWorksExistingProducts">
+    <classes>
+    <class name="finaltc.VerifyIfSearchFunctionalityWorksExistingProducts"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test thread-count="5" name="verifyIfSearchFunctionalityWorksNonExistingProducts">
+    <classes>
+    <class name="finaltc.verifyIfSearchFunctionalityWorksNonExistingProducts"/>
+    </classes>
+  </test> <!-- Test -->
+  
 </suite> <!-- Suite -->

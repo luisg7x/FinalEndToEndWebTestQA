@@ -32,6 +32,10 @@ public class HomeObjects {
 	private By checkoutButton = By.xpath("//button[contains(text(),'PROCEED TO CHECKOUT')]");
 	private By productsRemove = By.cssSelector("a.product-remove");
 	private By quantitysByItemsShoppingCart = By.cssSelector("div.cart-preview.active div div ul.cart-items li.cart-item div.product-total p.quantity");
+	private By allHrefNavegables = By.cssSelector("a[href*='/']");
+	private By searchBox = By.cssSelector("input[type='search']");
+	private By searchButton = By.cssSelector("button.search-button");
+	private By notMatchedSearchMessage = By.xpath("//h2[contains(text(),'Sorry, no products matched your search!')]");
 	
 	public WebElement[] products(String item) {
 		
@@ -122,6 +126,22 @@ public class HomeObjects {
 	
 	public List<WebElement> allPlusButtons() {
 		return driver.findElements(allPlusButtons);
+	}
+	
+	public List<WebElement> allHrefNavegables() {
+		return driver.findElements(allHrefNavegables);
+	}
+	
+	public WebElement searchBox() {
+		return driver.findElement(searchBox);
+	}
+	
+	public WebElement searchButton() {
+		return driver.findElement(searchButton);
+	}
+	
+	public WebElement notMatchedSearchMessage() {
+		return driver.findElement(notMatchedSearchMessage);
 	}
 	
 }

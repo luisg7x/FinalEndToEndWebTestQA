@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="10" parallel="tests" name="AddingMultipleItemsCart(failed)">
+    <classes>
+      <class name="finaltc.AddingMultipleItemsCart">
+        <methods>
+          <include name="addingMultipleMoreThanOneItemsCart"/>
+          <include name="close"/>
+          <include name="getConnection"/>
+        </methods>
+      </class> <!-- finaltc.AddingMultipleItemsCart -->
+    </classes>
+  </test> <!-- AddingMultipleItemsCart(failed) -->
+  <test thread-count="10" parallel="tests" name="VerifyCheckoutButtonDisabledWhenCarEmpty(failed)">
+    <classes>
+      <class name="finaltc.VerifyCheckoutButtonDisabledWhenCarEmpty">
+        <methods>
+          <include name="getConnection"/>
+          <include name="verifyCheckoutButtonDisabledWhenCarEmpty"/>
+          <include name="close"/>
+        </methods>
+      </class> <!-- finaltc.VerifyCheckoutButtonDisabledWhenCarEmpty -->
+    </classes>
+  </test> <!-- VerifyCheckoutButtonDisabledWhenCarEmpty(failed) -->
+  <test thread-count="10" parallel="tests" name="VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed(failed)">
+    <classes>
+      <class name="finaltc.VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed">
+        <methods>
+          <include name="close"/>
+          <include name="getConnection"/>
+          <include name="AddingProductToCart"/>
+        </methods>
+      </class> <!-- finaltc.VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed -->
+    </classes>
+  </test> <!-- VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed(failed) -->
+</suite> <!-- Failed suite [Suite] -->

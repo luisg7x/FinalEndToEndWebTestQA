@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="finaltc.VerifyCheckoutButtonDisabledWhenCarEmpty">
+      <class name="finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts">
         <methods>
           <include name="getConnection"/>
-          <include name="verifyCheckoutButtonDisabledWhenCarEmpty"/>
+          <include name="verifyIfSearchFunctionalityWorksNonExistingProducts" invocation-numbers="0 1 2 3 4"/>
           <include name="close"/>
         </methods>
-      </class> <!-- finaltc.VerifyCheckoutButtonDisabledWhenCarEmpty -->
+      </class> <!-- finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
