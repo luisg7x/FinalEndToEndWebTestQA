@@ -20,7 +20,7 @@ import pageObjects.HomeObjects;
 public class MyStepDefinitions {
 
 	private WebDriver driver;
-	private HomeObjects ho = new HomeObjects(driver);
+	private HomeObjects ho;
 	private String[][] items;
 	private static int priceMultipleItems;
 	
@@ -34,11 +34,10 @@ public class MyStepDefinitions {
     @When("^User add \"([^\"]*)\" to shopping cart$")
     public void user_add_something_to_shopping_cart(String strArg1) throws Throwable {
     	//items[0][0] = strArg1;
-    	try {
+    	Thread.sleep(5500);
+    	 	ho = new HomeObjects(driver);
     		ho.products(strArg1)[0].click();
-    	}catch(Exception e) {
-    		Assert.assertNull("Item no finded" + e, null);
-    	}	
+    
     }
 
     @When("^User add \"([^\"]*)\" \"([^\"]*)\" to shopping cart$")
