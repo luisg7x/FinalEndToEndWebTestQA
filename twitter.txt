@@ -1,0 +1,103 @@
+Request method:	GET
+Request URI:	https://api.twitter.com/2/tweets/search/recent?query=nyc&max_results=15
+Proxy:			<none>
+Request params:	<none>
+Query params:	query=nyc
+				max_results=15
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+cache-control: no-cache, no-store, max-age=0
+content-disposition: attachment; filename=json.json
+content-encoding: gzip
+content-length: 1788
+content-type: application/json; charset=utf-8
+date: Mon, 04 Jan 2021 21:01:37 GMT
+server: tsa_c
+set-cookie: personalization_id="v1_y8IqQpFN7mxQNy+bDxc2PQ=="; Max-Age=63072000; Expires=Wed, 04 Jan 2023 21:01:37 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+set-cookie: guest_id=v1%3A160979409724528589; Max-Age=63072000; Expires=Wed, 04 Jan 2023 21:01:37 GMT; Path=/; Domain=.twitter.com; Secure; SameSite=None
+strict-transport-security: max-age=631138519
+x-access-level: read-write
+x-connection-hash: 7852871285d1546b6a78a919f95b7e82
+x-content-type-options: nosniff
+x-frame-options: SAMEORIGIN
+x-rate-limit-limit: 180
+x-rate-limit-remaining: 179
+x-rate-limit-reset: 1609794997
+x-response-time: 205
+x-xss-protection: 0
+
+{
+    "data": [
+        {
+            "id": "1346200088427646977",
+            "text": "RT @BluDragonGal: The Internet really seemed to like the previews I posted of NYC bullying Spider-Man, so here is that episode in its entir…"
+        },
+        {
+            "id": "1346200086250979331",
+            "text": "New York AG claims Trump will 'step down' so Pence can #pardon him?? #NYC  https://t.co/3Hc8m7NjCQ via @MailOnline"
+        },
+        {
+            "id": "1346200080030773248",
+            "text": "@jburcham81 @Martha_Sheshan @soulnotforsale_ @BrashearDoug @murray_nyc @realDonaldTrump Okay. But what if Biden was the forced pick- in order to hide the misdealings of the Democrats? How would you feel if Sanders got screwed in favor of Clinton? Then screwed again in favor of Biden? What if every POTUS pick was forced? Corrupt leaders, covering up their misdeeds?"
+        },
+        {
+            "id": "1346200079087017984",
+            "text": "RT @RN7JB: Rantz: Deputy Seattle City Attorney lives in NYC, releases criminals that won't hurt him ? https://t.co/YNHROzSLny"
+        },
+        {
+            "id": "1346200079020003328",
+            "text": "RT @GovMikeHuckabee: In honor of Nancy Pelosi's demand for gender-neutral language, the sea critter Manatee will now by law be referred to…"
+        },
+        {
+            "id": "1346200075194806273",
+            "text": "RT @GovMikeHuckabee: In honor of Nancy Pelosi's demand for gender-neutral language, the sea critter Manatee will now by law be referred to…"
+        },
+        {
+            "id": "1346200068748169218",
+            "text": "@ProphetLurkerCW @soulnotforsale_ @BrashearDoug @murray_nyc @realDonaldTrump Ok, I guess you ignored my earlier response bc you’re repeating the same narrative. I see people mouth kiss their young kids all the time, so I don’t know why that’s inappropriate to you. Yet go from “Ivanka doesn’t do it now that she’s married”, to she’s a “consenting adult”"
+        },
+        {
+            "id": "1346200068110614528",
+            "text": "@murray_nyc @realDonaldTrump @SenTomCotton Nope!!!!!!!!!!!!!!!!!!!!!!!  Trump will be in white house for four more years"
+        },
+        {
+            "id": "1346200066026057731",
+            "text": "Alexi Laiho performing for the last time in the USA at Irving Plaza, NYC on April 19, 2019. #COBHC #AlexiLaiho #HeavyMetal https://t.co/rOuUf445BT"
+        },
+        {
+            "id": "1346200062494453761",
+            "text": "Love it!! @AlvaradoJose15 getting the recognition he deserves. NYC product that played all 4 years with @ctkcoachjarbs and @NYRhoops. An absolute winner and ultimate floor general. Couldn’t be prouder https://t.co/dnZ3EEEoIv"
+        },
+        {
+            "id": "1346200062448177152",
+            "text": "RT @profshanecrotty: @apoorva_nyc I disagree with that characterization of the data. The key experiment is to have either (1) T cell data b…"
+        },
+        {
+            "id": "1346200059105443842",
+            "text": "RT @PeteSikora1: The New Year means two fantastic colleagues, @Beta_Coronel and @RichBrooks350, from https://t.co/yuuVy3PIbF are moving to…"
+        },
+        {
+            "id": "1346200057650040834",
+            "text": "@GayleSc93833794 @murray_nyc @MarkMeadows How many more times do they need to count? Get with it - ffs, what is wrong with you????"
+        },
+        {
+            "id": "1346200056274280450",
+            "text": "RT @Liz_Wheeler: @JoeBiden There’s 97% mask compliance in San Fran.\n97% in NYC.\n97% in Washington D.C.\n94% in Dallas.\n96% in Philly.\n95% in…"
+        },
+        {
+            "id": "1346200049399848966",
+            "text": "RT @Rafa_Mangual: Just the biggest yr-over-yr increase in NYC homicides in 60 years, and almost 1,000 additional shooting victims... Nothin…"
+        }
+    ],
+    "meta": {
+        "newest_id": "1346200088427646977",
+        "oldest_id": "1346200049399848966",
+        "result_count": 15,
+        "next_token": "b26v89c19zqg8o3foshu7na1lckln2ks5o3m65xvr2w71"
+    }
+}

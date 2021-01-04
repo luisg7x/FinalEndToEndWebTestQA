@@ -1,76 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="10">
-  <test thread-count="5" name="VerifyIfAddButtonShowAddedWhenClicked">
-    <classes>
-      <class name="finaltc.VerifyIfAddButtonShowAddedWhenClicked"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="VerifyCheckoutButtonDisabledWhenCarEmpty">
-    <classes>
-    <class name="finaltc.VerifyCheckoutButtonDisabledWhenCarEmpty"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="VerifyIfCartClearButtonClearAddedMultipleISingleItemsToCart">
-    <classes>
-    <class name="finaltc.VerifyIfCartClearButtonClearAddedMultipleISingleItemsToCart"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="AddingMultipleItemsCart">
-    <classes>
-    <class name="finaltc.AddingMultipleItemsCart"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="AddingMultipleISingleItemsToCart">
-    <classes>
-    <class name="finaltc.AddingMultipleISingleItemsToCart"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="ValidateAddingSingleItemShoppingCart">
-    <classes>
-    <class name="finaltc.ValidateAddingSingleItemShoppingCart"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="ValidateAddingQuantityToTheItemShoppingCart">
-    <classes>
-    <class name="finaltc.ValidateAddingQuantityToTheItemShoppingCart"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="VerifyTotalSumOfAddQuantitySingleItem">
-    <classes>
-    <class name="finaltc.VerifyTotalSumOfAddQuantitySingleItem"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed">
-    <classes>
-    <class name="finaltc.VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="VerifyAllLinksWorks">
-    <classes>
-    <class name="finaltc.VerifyAllLinksWorks"/>
-    </classes>
-  </test> <!-- Test -->
-  
-  <test thread-count="5" name="VerifyIfSearchFunctionalityWorksExistingProducts">
-    <classes>
-    <class name="finaltc.VerifyIfSearchFunctionalityWorksExistingProducts"/>
-    </classes>
-  </test> <!-- Test -->
-  
-    <test thread-count="5" name="verifyIfSearchFunctionalityWorksNonExistingProducts">
-    <classes>
-    <class name="finaltc.verifyIfSearchFunctionalityWorksNonExistingProducts"/>
-    </classes>
-  </test> <!-- Test -->
-  
-</suite> <!-- Suite -->
+
+	<suite name="Test" parallel="tests" thread-count="10">
+		<listeners> <!-- Adding listener class on the xml -->
+	  	<listener class-name="finaltc.Listeners"/>
+	  </listeners>
+	  <test thread-count="5" name="VerifyIfAddButtonShowAddedWhenClicked">
+	    <classes>
+	      <class name="finaltc.VerifyIfAddButtonShowAddedWhenClicked"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="VerifyCheckoutButtonDisabledWhenCarEmpty">
+	    <classes>
+	    <class name="finaltc.VerifyCheckoutButtonDisabledWhenCarEmpty"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="VerifyIfCartClearButtonClearAddedMultipleISingleItemsToCart">
+	    <classes>
+	    <class name="finaltc.VerifyIfCartClearButtonClearAddedMultipleISingleItemsToCart"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="AddingMultipleItemsCart">
+	    <classes>
+	    <class name="finaltc.AddingMultipleItemsCart"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="AddingMultipleISingleItemsToCart">
+	    <classes>
+	    <class name="finaltc.AddingMultipleISingleItemsToCart"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="ValidateAddingSingleItemShoppingCart">
+	    <classes>
+	    <class name="finaltc.ValidateAddingSingleItemShoppingCart"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="ValidateAddingQuantityToTheItemShoppingCart">
+	    <classes>
+	    <class name="finaltc.ValidateAddingQuantityToTheItemShoppingCart"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="VerifyTotalSumOfAddQuantitySingleItem">
+	    <classes>
+	    <class name="finaltc.VerifyTotalSumOfAddQuantitySingleItem"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed">
+	    <classes>
+	    <class name="finaltc.VerifyIfShoppingCartKeepItemWhenBrowserGetRefreshed"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="VerifyAllLinksWorks">
+	    <classes>
+	    <class name="finaltc.VerifyAllLinksWorks"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	  <test thread-count="5" name="VerifyIfSearchFunctionalityWorksExistingProducts">
+	    <classes>
+	    <class name="finaltc.VerifyIfSearchFunctionalityWorksExistingProducts"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	    <test thread-count="5" name="VerifyIfSearchFunctionalityWorksNonExistingProducts">
+	    <classes>
+	    <class name="finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts"/>
+	    </classes>
+	  </test> <!-- Test -->
+	  
+	</suite> <!-- Suite -->

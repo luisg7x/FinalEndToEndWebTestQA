@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts">
+      <class name="finaltc.RestRecentSearchTwitter">
         <methods>
-          <include name="getConnection"/>
-          <include name="verifyIfSearchFunctionalityWorksNonExistingProducts" invocation-numbers="0 1 2 3 4"/>
-          <include name="close"/>
+          <include name="getRecentSearchTwitter"/>
+          <include name="getRequestBase"/>
         </methods>
-      </class> <!-- finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts -->
+      </class> <!-- finaltc.RestRecentSearchTwitter -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

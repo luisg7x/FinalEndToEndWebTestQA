@@ -1,6 +1,8 @@
 package resources;
 
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -9,7 +11,10 @@ import java.sql.Statement;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -56,6 +61,22 @@ public class Base {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		return driver;
+	}
+	
+	public String getScreenShotPath(String testname, WebDriver driver) throws IOException {
+		//long way:
+		/*TakesScreenshot ts = (TakesScreenshot) driver;
+		File src = ts.getScreenshotAs(OutputType.FILE);*/
+		
+		//doing screenshot
+		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		//one fact: saving files in: C:\ ... will be denied or will show a error, is because C drive always need admin privilliges
+		//import apache io
+		//getting current path of the project:
+		String destinationFile = System.getProperty("user.dir") + /* adding folder-> */ "\\reports\\" + testname + ".png"; //note: folder is created automatically
+		FileUtils.copyFile(src, new File(destinationFile));
+		//return is necesary for extent report
+		return destinationFile;
 	}
 	
 	private ResultSet getDataBaseConnection(String query) throws SQLException {

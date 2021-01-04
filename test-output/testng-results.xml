@@ -1,76 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-03T12:39:25 CST" name="Default suite" finished-at="2021-01-03T12:39:41 CST" duration-ms="16075">
+  <suite started-at="2021-01-04T15:01:36 CST" name="Default suite" finished-at="2021-01-04T15:01:37 CST" duration-ms="1667">
     <groups>
     </groups>
-    <test started-at="2021-01-03T12:39:25 CST" name="Default test" finished-at="2021-01-03T12:39:41 CST" duration-ms="16075">
-      <class name="finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts">
-        <test-method is-config="true" signature="getConnection()[pri:0, instance:finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts@73ee04c8]" started-at="2021-01-03T12:39:25 CST" name="getConnection" finished-at="2021-01-03T12:39:32 CST" duration-ms="6418" status="PASS">
+    <test started-at="2021-01-04T15:01:36 CST" name="Default test" finished-at="2021-01-04T15:01:37 CST" duration-ms="1667">
+      <class name="finaltc.RestRecentSearchTwitter">
+        <test-method is-config="true" signature="getRequestBase()[pri:0, instance:finaltc.RestRecentSearchTwitter@550ee7e5]" started-at="2021-01-04T15:01:36 CST" name="getRequestBase" finished-at="2021-01-04T15:01:36 CST" duration-ms="511" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getConnection -->
-        <test-method signature="verifyIfSearchFunctionalityWorksNonExistingProducts(java.lang.String)[pri:0, instance:finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts@73ee04c8]" started-at="2021-01-03T12:39:32 CST" name="verifyIfSearchFunctionalityWorksNonExistingProducts" data-provider="dataProvider" finished-at="2021-01-03T12:39:34 CST" duration-ms="1876" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[qqqqq]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- getRequestBase -->
+        <test-method signature="getRecentSearchTwitter()[pri:0, instance:finaltc.RestRecentSearchTwitter@550ee7e5]" started-at="2021-01-04T15:01:36 CST" name="getRecentSearchTwitter" finished-at="2021-01-04T15:01:37 CST" duration-ms="1142" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyIfSearchFunctionalityWorksNonExistingProducts -->
-        <test-method signature="verifyIfSearchFunctionalityWorksNonExistingProducts(java.lang.String)[pri:0, instance:finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts@73ee04c8]" started-at="2021-01-03T12:39:34 CST" name="verifyIfSearchFunctionalityWorksNonExistingProducts" data-provider="dataProvider" finished-at="2021-01-03T12:39:36 CST" duration-ms="1954" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nananana]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIfSearchFunctionalityWorksNonExistingProducts -->
-        <test-method signature="verifyIfSearchFunctionalityWorksNonExistingProducts(java.lang.String)[pri:0, instance:finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts@73ee04c8]" started-at="2021-01-03T12:39:36 CST" name="verifyIfSearchFunctionalityWorksNonExistingProducts" data-provider="dataProvider" finished-at="2021-01-03T12:39:38 CST" duration-ms="1859" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[tooooo]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIfSearchFunctionalityWorksNonExistingProducts -->
-        <test-method signature="verifyIfSearchFunctionalityWorksNonExistingProducts(java.lang.String)[pri:0, instance:finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts@73ee04c8]" started-at="2021-01-03T12:39:38 CST" name="verifyIfSearchFunctionalityWorksNonExistingProducts" data-provider="dataProvider" finished-at="2021-01-03T12:39:40 CST" duration-ms="1791" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1545]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIfSearchFunctionalityWorksNonExistingProducts -->
-        <test-method signature="verifyIfSearchFunctionalityWorksNonExistingProducts(java.lang.String)[pri:0, instance:finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts@73ee04c8]" started-at="2021-01-03T12:39:40 CST" name="verifyIfSearchFunctionalityWorksNonExistingProducts" data-provider="dataProvider" finished-at="2021-01-03T12:39:41 CST" duration-ms="1799" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iiooo]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyIfSearchFunctionalityWorksNonExistingProducts -->
-        <test-method is-config="true" signature="close()[pri:0, instance:finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts@73ee04c8]" started-at="2021-01-03T12:39:41 CST" name="close" finished-at="2021-01-03T12:39:41 CST" duration-ms="23" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- finaltc.VerifyIfSearchFunctionalityWorksNonExistingProducts -->
+        </test-method> <!-- getRecentSearchTwitter -->
+      </class> <!-- finaltc.RestRecentSearchTwitter -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
